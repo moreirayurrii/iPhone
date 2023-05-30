@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+padding: 30px;
+width: 400px;
+height: 400px;
+border: 3px solid #000;
+margin: 0 auto;
+position: relative;
+border-radius: 50px;
+animation-name: anima-container;
+animation-duration: 1.0s;
+animation-fill-mode: forwards;
+display: flex;
+align-items: center;
+justify-content: center;
+
+} 
+#btn{
+    padding: 15px;
+}
+
+@keyframes anima-container{
+    from{
+
+        width: 50px;
+        height: 50px;
+    }
+    to{
+    
+        width: 400px;
+        height: 400px;
+    }
+ }   
+
+
+#container div {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    /*Centralizar o texto da DIV */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+}
+#container div span{
+    font-weight: bold;
+}
+
+#container #box-01{
+    background-color: #ff0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation-duration: 3s;
+    animation-name: anima-box01;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes anima-box01{
+    25%{
+        top: 10px;
+        left: 285px;
+    }
+    50%{
+        top: 285px;
+        left: 285px;
+    }
+    75%{
+        top:285px;
+        left:10px;
+    }
+}
+#container #box-01:hover{
+    background-color: #8d8d03;
+    transition: 1s;
+}
+
+#container #box-02{
+    background-color: rgb(99, 34, 34);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation-name: anima-box02;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes anima-box02{
+    25%{
+        top: 285px;
+        right: 10px;
+    }
+    50%{
+        top: 285px;
+        right: 285px;
+    }
+    75%{
+        top:10px;
+        right:285px;
+    }
+  
+}
+
+#container #box-02:hover{
+    background-color: #0f0;
+    transition: 1s;
+}
+#container #box-03{
+    bottom: 10px;
+    right: 10px;
+   position: absolute; 
+   background-color: rgb(32, 78, 32);
+   animation-duration: 3s;
+   animation-name: anima-box03;
+   animation-iteration-count: infinite;
+}   
+@keyframes anima-box03{
+    25%{
+        bottom: 10px;
+        right: 285px;
+    }
+    50%{
+        bottom: 285px;
+        right: 285px;
+    }
+    75%{
+        bottom: 285px;
+        right:10px;
+    }
+
+
+}
+
+
+
+#container #box-04{
+    background-color: #00F;
+    position: absolute ;
+    bottom: 10px;
+    left: 10px;   
+    animation-duration: 3s; 
+    animation-name: anima-box04;
+    animation-iteration-count: infinite;
+}
+@keyframes anima-box04{
+    25%{
+        bottom: 285px;
+        left: 10px;
+    }
+    50%{
+        bottom: 285px;
+        left: 285px;
+    }
+    75%{
+        bottom:10px;
+        left:285px;
+    }
+    
+}
+#lgpd{
+    background-color: #e2dddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: justify;
+    position: absolute;
+    bottom: 10px ;
+    right: 10px;
+    left: 10px;
+    border: solid #09cF;
+    /*posicionar botao ao lado do texto com flex */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+#lgpd a{
+
+    display: block;
+    background-color: #09cF;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+#lgpd a:hover{
+    background-color: #06c;
+    transition: 0.5s;
+}
+
+
+
+
+
